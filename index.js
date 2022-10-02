@@ -30,5 +30,5 @@ const withoutPlugin = transformSync(SRC, {
   plugins: [],
 }).code;
 
-eval(withPlugin);
-eval(withoutPlugin);
+eval(withPlugin); // undefined
+eval(withoutPlugin); // "foo"
